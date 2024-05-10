@@ -20,6 +20,9 @@ jobs:
           distribution: 'adopt'
           cache: maven
 
+      - name: Make Maven Wrapper executable
+        run: chmod +x mvnw
+
       - name: Build JAR with cloud profile
         run: |
           ./mvnw clean package -Dspring.profiles.active=cloud
