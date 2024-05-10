@@ -20,6 +20,9 @@ jobs:
           distribution: 'adopt'
           cache: maven
 
+      - name: Generate Maven Wrapper files
+        run: mvn -N io.takari:maven:wrapper
+
       - name: Make Maven Wrapper executable
         run: chmod +x mvnw
 
