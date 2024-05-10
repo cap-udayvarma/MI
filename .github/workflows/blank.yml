@@ -28,7 +28,7 @@ jobs:
 
       - name: Build JAR with cloud profile
         run: |
-          ./mvnw clean package -Dspring.profiles.active=local
+          ./mvnw clean package -Dspring.profiles.active=cloud
 
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
