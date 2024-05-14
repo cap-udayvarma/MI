@@ -43,6 +43,8 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           cluster-name: ${{ env.CLUSTER_NAME }}
           resource-group: ${{ env.RESOURSE_GROUP }}
+      - name: List all files in the directory
+        run: ls -la
       - name: Check file permissions
         run: ls -l deployment.yml
 
