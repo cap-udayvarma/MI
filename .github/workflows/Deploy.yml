@@ -23,6 +23,9 @@ jobs:
       - name: Display the path
         run: pwd
         shell: bash
+      - name: List contents of directory
+        run: ls -R
+        shell: bash
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -49,6 +52,6 @@ jobs:
         with:
           namespace: seventy5
           manifests: |
-            ./.github/workflows/deployment.yml
+            kube/deployment.yml
           images: |
             udayvarma007/seventy5-docker:${{ github.run_number }}
