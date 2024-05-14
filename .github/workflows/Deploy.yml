@@ -26,6 +26,15 @@ jobs:
       - name: List contents of directory
         run: ls -R
         shell: bash
+      - name: Print current directory
+        run:
+          echo "Current directory: $(pwd)"
+        shell: bash
+
+      - name: List contents of directory
+        run: ls -alR
+        shell: bash
+
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
