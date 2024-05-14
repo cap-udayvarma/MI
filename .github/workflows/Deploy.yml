@@ -43,6 +43,8 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           cluster-name: ${{ env.CLUSTER_NAME }}
           resource-group: ${{ env.RESOURSE_GROUP }}
+      - name: Check file permissions
+        run: ls -l deployment.yml
 
       - name: Apply Kubernetes deployment
         uses: Azure/k8s-deploy@v1
