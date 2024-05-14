@@ -18,7 +18,7 @@ jobs:
       CLUSTER_NAME: aks-seventy5
       RESOURSE_GROUP: seventy5
     needs: [build]
-    environment: seventy
+    environment: dev
     steps:
       - name: Display the path
         run: pwd
