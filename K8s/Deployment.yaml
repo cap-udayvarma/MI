@@ -19,7 +19,7 @@ spec:
         - name: seventy5test
           image: udayvarma007/seventy5-docker:${{ github.run_number }}
           env:
-            - name: databaseurl
+            - name: DATABASE_URL
               value: jdbc:sqlserver://seventy5-server.database.windows.net:1433;database=seventy;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;Authentication=ActiveDirectoryManagedIdentity
           ports:
             - containerPort: 8080
