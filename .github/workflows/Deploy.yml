@@ -49,7 +49,6 @@ jobs:
         with:
           namespace: seventy5
           manifests: |
-            K8s/Deployment.yml
-
+            K8s/deployment.yml
           images: |
             udayvarma007/seventy5-docker:${{ github.run_number }}
