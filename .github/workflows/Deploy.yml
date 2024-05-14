@@ -43,16 +43,12 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           cluster-name: ${{ env.CLUSTER_NAME }}
           resource-group: ${{ env.RESOURSE_GROUP }}
-      - name: List all files in the directory
-        run: ls -la
-      - name: Check file permissions
-        run: ls -l kubernetes/deployment.yml
 
       - name: Apply Kubernetes deployment
         uses: Azure/k8s-deploy@v1
         with:
           namespace: seventy5
           manifests: |
-            /kubernetes/deployment.yml
+            kubernetes/deployment.yml
           images: |
             udayvarma007/seventy5-docker:${{ github.run_number }}
