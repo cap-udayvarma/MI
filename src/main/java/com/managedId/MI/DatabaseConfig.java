@@ -10,8 +10,8 @@ import javax.sql.DataSource;
 @Configuration
 public class DatabaseConfig {
 
-    @Value("${spring.datasource.url}")
-    private String databaseUrl;
+//    @Value("${spring.datasource.url}")
+    private String databaseUrl = "jdbc:sqlserver://seventy5-server.database.windows.net:1433;database=seventy;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;Authentication=ActiveDirectoryManagedIdentity";
 
 
     @Bean

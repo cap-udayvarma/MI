@@ -10,9 +10,9 @@ spring:
 ---
 spring:
   profiles: cloud
-  datasource:
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: ${DATABASE_URL}
+#  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    url: ${DATABASE_URL}
 
 # Local environment configurations
 ---
