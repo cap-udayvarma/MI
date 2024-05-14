@@ -27,13 +27,15 @@ jobs:
         run: ls -R
         shell: bash
       - name: Print current directory
-        run:
+        run: |
           echo "Current directory: $(pwd)"
         shell: bash
 
       - name: List contents of directory
-        run: ls -alR
+        run: |
+          ls -alR
         shell: bash
+
 
 
       - name: Set up QEMU
