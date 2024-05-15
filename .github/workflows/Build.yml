@@ -3,7 +3,7 @@ on:
  workflow_call:
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: kubernetes
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
