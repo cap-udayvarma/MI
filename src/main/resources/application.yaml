@@ -20,4 +20,4 @@ spring:
   profiles: local
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://sevent5-test.database.windows.net:1433;database=seven;user=uday@sevent5-test;password=@Capgemini1234;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30
+    url: jdbc:sqlserver://seventy5-server.database.windows.net:1433;database=seventy;user=seventy5@seventy5-server;password=@Capgemini1234;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
